@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.farid</groupId>
+  <groupId>com.uriel</groupId>
   <artifactId>halloweenhavoc</artifactId>
-  <name>Pradera de Flores - Proyecto de Graficacion</name>
+  <name>Ring - Proyecto de Graficacion</name>
   <version>1.0.0</version>
   <description>Proyecto integrador de la materia Graficacion (SCC-1010).
         Cubre los 5 temas del programa: introduccion (modelos de color, lineas, poligonos),
