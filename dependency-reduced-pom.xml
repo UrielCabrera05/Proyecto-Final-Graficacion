@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.farid</groupId>
+  <artifactId>halloweenhavoc</artifactId>
+  <name>Pradera de Flores - Proyecto de Graficacion</name>
+  <version>1.0.0</version>
+  <description>Proyecto integrador de la materia Graficacion (SCC-1010).
+        Cubre los 5 temas del programa: introduccion (modelos de color, lineas, poligonos),
+        graficacion 2D (transformaciones, Bezier, B-spline, fractales),
+        graficacion 3D (representacion, transformaciones, perspectiva),
+        relleno/iluminacion/sombreado (Phong, Gouraud, materiales, texturas)
+        y animacion (tweening, morphing, skeletal, controlada por usuario).</description>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.5.1</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer>
+                  <mainClass>com.farid.pradera.Main</mainClass>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jme3.version>3.6.1-stable</jme3.version>
+  </properties>
+</project>
